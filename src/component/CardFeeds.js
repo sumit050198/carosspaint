@@ -4,7 +4,7 @@ import './CardFeeds.css'; // Import the CSS file
 const CardFeeds = () => {
     return (
     <>
-        <p style={{margin: "70px 0 0 0"}}>OUR INSTAGRAM FEED</p>
+        <p style={{margin: "30px 0 20px 0"}}>OUR INSTAGRAM FEED</p>
         <h1 className='INSTAGRAM'>INSTAGRAM</h1>
         <div className='d-flex my-3 justify-content-center'>
             <div className="card">
