@@ -1,0 +1,330 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  
+  .col h3 {
+    margin: 0;
+  }
+
+  .PPF-Installation {
+    text-transform: uppercase;
+    font-size: 42px;
+    text-align: center;
+    color: #b8242a;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+
+  
+  .circle {
+    width: 125px;
+    height: 125px;
+    border: 15px solid transparent;
+    border-radius: 50%;
+    margin: 0;
+    position: relative;
+  }
+  
+  .circle1 {
+    border-color: #fd1d1d;
+    border-left-color: transparent;
+    border-top-color: transparent;
+  }
+  
+  .circle2 {
+    border-color: #b8242a;
+    border-right-color: transparent;
+  }
+  
+  .circle3 {
+    border-color: #fd1d1d;
+    border-left-color: transparent;
+  }
+  
+  .circle4 {
+    border-color: #b8242a;
+    border-right-color: transparent;
+  }
+  
+  .circle h2 {
+    display: table;
+    margin: 5px 0 0 5px;
+    width: 85px;
+    height: 85px;
+    background: #b8242a;
+    border-radius: 50%;
+  }
+  
+  .circle2 h2 {
+    background: #b8242a;
+  }
+  
+  .circle3 h2 {
+    background: #b8242a;
+  }
+  
+  .circle4 h2 {
+    background: #b8242a;
+  }
+  
+  .circle span {
+    font-size: 11px;
+    color: #fff;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+  
+  .circle i,
+  .circle b {
+    font-weight: bold;
+    font-style: normal;
+    display: block;
+  }
+  
+  .circle i {
+    font-size: 24px;
+  }
+  
+  .wrap {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 980px;
+    margin: auto;
+  }
+  
+  .col {
+    flex: 1 0 50%;
+    display: flex;
+    align-items: center;
+    margin-bottom: -47px;
+    position: relative;
+    left: 23px;
+  }
+  
+  .col2 {
+    left: -24px;
+  }
+  
+  .col1 {
+    text-align: right;
+    align-content: flex-end;
+  }
+  
+  .col1 .content {
+    order: -1;
+  }
+  
+  .content {
+    flex: 1 0 0%;
+    padding: 1px 10px;
+    margin: -20px 0;
+  }
+  
+  .content h2 {
+    font-size: 1rem;
+  }
+
+  .parraTitle{
+    font-size: 18px;
+    color: #b8242a;
+    /* background-color: #17556f; */
+    font-weight: 550;
+}
+  
+   p {
+    margin: 0.2em 0 0 0;
+    font-size: 15px;
+    /* font-weight: 550; */
+    color: #666;
+  }
+  
+  .circle1:before {
+    content: "";
+    height: 15px;
+    width: 250px;
+    position: absolute;
+    right: 46px;
+    top: -15px;
+    background: #FF0101 !important;
+    background: linear-gradient(to left, #FF0101 0%, white 100%) !important;
+
+    /* background: linear-gradient(to left, #29bdcc 0%, white 100%); */
+    z-index: -1;
+    animation: shimmer 10s infinite forwards;
+  }
+  
+  @keyframes shimmer {
+    0% {
+      width: 0;
+    }
+  
+    5% {
+      width: 250px;
+    }
+  
+    100% {
+      width: 250px;
+    }
+  }
+  
+  .circle1:after,
+  .circle8:after {
+    content: "";
+    position: absolute;
+    left: -14px;
+    top: -15px;
+    width: 124.2px;
+    height: 125px;
+    border: 15px solid transparent;
+    color: #FF0101;
+    border-color: #FF0101;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    transform: rotate(-45deg);
+    border-radius: 50%;
+    z-index: -1;
+  }
+  
+  /* .circle8:after {
+    border-color: #b8242a;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    transform: rotate(-45deg);
+  } */
+  
+  .circle8:before {
+    content: "";
+    height: 15px;
+    width: 250px;
+    position: absolute;
+    right: -202px;
+    bottom: -15px;
+    background: #990101;
+    background: linear-gradient(to right, #FF0101 0%, #990101 100%) !important;
+
+    /* background: linear-gradient(to right, #FF0101 0%, #990101 100%); */
+    z-index: -1;
+  }
+  
+  .circle8 {
+    border-bottom-color: transparent;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .wrap {
+      display: block;
+    }
+  
+    .content {
+      margin: 0;
+    }
+  
+    .col {
+      margin: 10px 0;
+      position: static;
+    }
+  
+    .circle4:before,
+    .circle4:after,
+    .circle1:before,
+    .circle2:after {
+      display: none;
+    }
+  
+    .circle1 {
+      border-color: #990101;
+    }
+  
+    .circle2 {
+      border-color: #990101;
+    }
+  
+    .circle3 {
+      border-color: #990101;
+    }
+  
+    .circle4 {
+      border-color: #990101;
+    }
+ 
+  }
+  
+  /* the following css code is just for fun and can be removed*/
+  /* it applies the shimmer down the spiral using <div class="shim"> which can also be removed */
+  .shim {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    margin-top: 0;
+    width: 100%;
+    height: 100%;
+    animation: shim 1s linear forwards;
+    transform: rotate(-90deg);
+  }
+  
+  .shim:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -15px;
+    margin-left: -8px;
+    width: 15px;
+    height: 15px;
+    background: radial-gradient(#fff, rgba(255, 255, 255, 0));
+  }
+  
+  .shimx {
+    transform: rotate(90deg);
+  }
+  
+  .shimx {
+    animation: shim2 1s linear .75s forwards;
+  }
+  
+  .shim2 {
+    animation-delay: .75s;
+  }
+  
+  .shim3 {
+    animation-delay: 1.5s;
+  }
+  
+  .shim4 {
+    animation-delay: 2.25s;
+  }
+  
+  @keyframes shim {
+    from {
+      transform: rotate(-90deg);
+    }
+  
+    to {
+      transform: rotate(270deg);
+    }
+  }
+  
+  @keyframes shim2 {
+    from {
+      transform: rotate(90deg);
+    }
+  
+    to {
+      transform: rotate(-270deg);
+    }
+  }
+
+
+  
